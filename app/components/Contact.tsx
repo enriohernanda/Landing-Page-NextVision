@@ -34,7 +34,12 @@ export default function Contact() {
           <motion.textarea placeholder="Message" className="p-3 rounded-md border" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} />
 
           {/* Button */}
-          <motion.button className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
+          <motion.button
+            className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 cursor-pointer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+          >
             Send Message
           </motion.button>
         </motion.form>
